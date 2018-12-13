@@ -1,0 +1,60 @@
+page-home {
+
+    .card-background-page {
+      background-image: url(../../assets/imgs/fundo1.jpg);
+      background-size: cover;
+      background-position: center;
+        ion-card {
+          // position: relative;
+          text-align: center;
+          background: #708090;
+        }
+    .card-text-field{
+        // position: absolute;
+        // bottom: 0;
+        // left: 0;
+        padding: 2%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .card-text-field button{
+      font-size: 1em;
+      padding: 5px;
+    }
+    .price{
+      font-weight: 800;
+      color: #222;
+      background: #e5e5e5;
+      padding: 1px 2px;
+      margin: 2px;
+    }
+        .card-title {
+          font-size: 1.5em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          width: 100%;
+          color: #fff;
+          margin-top:2px;
+        }
+      
+      }
+      .id{
+        color: rgb(184, 41, 41);
+      }
+      .lista{
+       background: #f8f8f8; 
+      }
+      .titu{
+        color: rgb(37, 37, 37);
+        font-size: 30px;
+        margin: 18%;
+      }
+      .titulo{
+        background: #fff;
+      }
+}

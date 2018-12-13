@@ -1,0 +1,26 @@
+page-slide {
+        .card-background-page {
+            background-image: url(../../assets/imgs/fundo2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .titulo{
+            text-align: center;
+            padding-bottom: 90%;
+            font-size: 70px;
+            font-family: 'Spicy Rice', cursive;
+        }
+    
+        .sub-titulo{
+            text-align: center;
+            font-size: 25px;
+            display: block;
+        }
+    
+        .botao{
+            margin-bottom: 10%;
+        }
+        
+        
+}

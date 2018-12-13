@@ -1,0 +1,131 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><ion-icon name="book"></ion-icon>  Cardápio - The Kings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- <ion-content padding>
+  <h2>TheKings</h2>
+</ion-content> -->
+
+<ion-content class="card-background-page">
+  
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+
+  <ion-card>
+    <img src="assets/imgs/asterix.jpg"/>
+    <div class="card-text-field">
+      <div class="card-title">Asterix Burger<span class="price">R$ 10,90</span></div>
+      <div class="card-subtitle">Pão de milho tostado na manteiga, alface americana, tomates frescos, picles, 100g de carne, queijo prato, bacon em tiras e cebola roxa.  </div>
+      <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho </button>
+    </div>
+</ion-card>
+
+
+  <ion-card>
+    <img src="assets/imgs/porn.jpg"/>
+    <div class="card-text-field">
+      <div class="card-title">Bacon Porn <span class="price">R$ 13,00</span></div>
+      <div class="card-subtitle">Pão de milho tostado na manteiga, maionese da casa, alface americana, tomates frescos, burger 180 gramas com recheio de queijo, bacon em tiras e queijo prato.  </div>
+      <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+    </div>
+</ion-card>
+
+
+  <ion-card>
+    <img src="assets/imgs/burguerking.jpg"/>
+    <div class="card-text-field">
+      <div class="card-title">Burguer King<span class="price">R$ 9,00</span></div>
+      <div class="card-subtitle">Pão de brioche tostado na manteiga, 160g de carne, burger pernil suíno 120g, cheddar cremoso, dobro de bacon, cebola na chapa e molho barbecue. </div>
+      <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+    </div>
+  </ion-card>
+
+
+  <ion-card>
+    <img src="assets/imgs/frango.jpg"/>
+    <div class="card-text-field">
+      <div class="card-title">Chicken Burger <span class="price">R$ 14,00</span></div>
+      <div class="card-subtitle">Pão artesanal tostado na manteiga, maionese da casa, alface americana, tomate, 100g carne, queijo mozarela, bacon em tiras e frango empanado.  </div>
+      <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+    </div>
+  </ion-card>
+
+
+  <ion-card>
+    <img src="assets/imgs/carnefritas.jpeg"/>
+    <div class="card-text-field">
+      <div class="card-title">Pão com Carne + Batata Frita <span class="price">R$ 7,50</span></div>
+      <div class="card-subtitle">Pão artesanal tostado na manteiga e 160g de carne + Acompanhamento de Batata Frita. <br> Calabresa </div>
+      <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+    </div>
+  </ion-card>
+
+
+    <ion-card>
+      <img src="assets/imgs/suco-de-maracuja.jpg"/>
+      <div class="card-text-field">
+        <div class="card-title">Suco de Maracujá <span class="price">R$ 3,00</span></div>
+      <div class="card-subtitle">Suco natural com açúcar à gosto </div>
+        <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+      </div>
+    </ion-card>
+
+
+    <ion-card>
+      <img src="assets/imgs/goiaba.jpeg"/>
+      <div class="card-text-field">
+        <div class="card-title">Suco de Goiaba  <span class="price">R$ 2,50</span></div>
+        <div class="card-subtitle">Suco natural com açúcar à gosto</div>
+        <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+      </div>
+    </ion-card>
+
+
+    <ion-card>
+      <img src="assets/imgs/laranja.png"/>
+      <div class="card-text-field">
+        <div class="card-title">Suco de Laranja <span class="price">R$ 3,00</span></div>
+        <div class="card-subtitle">Suco natural com açúcar à gosto </div>
+        <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/imgs/coca.jpg"/>
+      <div class="card-text-field">
+        <div class="card-title">Coca-Cola  2L <span class="price">R$ 7,00</span></div>
+        <div class="card-subtitle">Refrigerante Coca-Cola 2 litros </div>
+        <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/imgs/fanta.jpeg"/>
+      <div class="card-text-field">
+        <div class="card-title">Fanta  2L <span class="price">R$ 7,00</span></div>
+        <div class="card-subtitle">Refrigerante Fanta 2 litros </div>
+        <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/imgs/guarana.jpeg"/>
+      <div class="card-text-field">
+        <div class="card-title">Guaraná 2L <span class="price">R$ 7,00</span></div>
+        <div class="card-subtitle">Refrigerante Guaraná 2 litros </div>
+        <button ion-button color="secondary" full (click)="addPage()">Adicionar ao carrinho</button>
+      </div>
+    </ion-card>
+</ion-content>
+<!-- <ion-content padding>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+</ion-content> -->

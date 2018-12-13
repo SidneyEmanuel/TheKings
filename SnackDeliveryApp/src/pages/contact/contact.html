@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="titulo">
+      <ion-icon name="people"></ion-icon> Logar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content class="card-background-page">
+
+<div padding>
+        <ion-segment [(ngModel)]="logar">
+          <ion-segment-button value="Cadastrar">
+            Cadastrar
+          </ion-segment-button>
+          <ion-segment-button value="Logar">
+            Logar
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="logar">
+        <form [formGroup]="login" (ngSubmit)="loginDados()">
+        <ion-list class="lista" *ngSwitchCase="'Logar'">
+          <ion-item>
+            <ion-thumbnail item-start>
+                <ion-list>
+                    
+                    <ion-item>
+                      <ion-label fixed><ion-icon name="person"></ion-icon> Usuário</ion-label>
+                      <ion-input type="text" name="email" formControlName="email"></ion-input>
+                    </ion-item>
+                  
+                    <ion-item>
+                      <ion-label fixed> <ion-icon name="key"></ion-icon> Senha</ion-label>
+                      <ion-input type="password" name="senha" formControlName="senha"></ion-input>
+                    </ion-item>
+              
+                    
+                    <button  (click)="pushPage()" ion-button >Enviar</button>
+                  
+                  </ion-list>
+            </ion-thumbnail>
+            
+          </ion-item>
+        </ion-list>
+        </form>
+
+
+
+
+
+        <form [formGroup]="cadastro" (ngSubmit)="postDados()">
+        <ion-list class="lista" *ngSwitchCase="'Cadastrar'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <ion-list>
+                <ion-item>
+                      <ion-label floating> <ion-icon name="person"></ion-icon>Nome</ion-label>
+                      <ion-input type="text" name="nome" formControlName="nome"></ion-input>
+                </ion-item>
+                <ion-item>
+                      <ion-label floating> <ion-icon name="person"></ion-icon>Email</ion-label>
+                      <ion-input type="email" name="email" formControlName="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                      <ion-label floating> <ion-icon name="key"></ion-icon>Senha</ion-label>
+                      <ion-input type="password" name="senha" formControlName="senha"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label floating> <ion-icon name="person"></ion-icon>Endereço</ion-label>
+                  <ion-input type="text" name="endereco" formControlName="endereco"></ion-input>
+            </ion-item>
+                <ion-item>
+                      <button  (click)="pushPage()" ion-button >Enviar</button>
+                </ion-item>
+          </ion-list>
+            </ion-thumbnail>
+            
+          </ion-item>
+        </ion-list>
+        </form>
+      </div>
+
+</ion-content>
